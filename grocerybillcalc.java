@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class grocerybillcalc {
+public class GroceryBillCalc {
     public static void main(String[] args) {
         Scanner kbd = new Scanner(System.in);
 
