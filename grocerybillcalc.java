@@ -31,10 +31,12 @@ public class grocerybillcalc {
 
         System.out.println();
         System.out.println("Results:");
-        System.out.println("Monthly Total (before coupon): $" + monthlyTotal);
-        System.out.println("Weekly Average (before coupon): $" + weeklyAverage);
-        System.out.println("Monthly Total (after coupon): $" + discountedMonthlyTotal);
-        System.out.println("Weekly Average (after coupon): $" + discountedWeeklyAverage);
+        System.out.println("Monthly Total (before coupon): $" + String.format("%.2f", monthlyTotal));
+        System.out.println("Weekly Average (before coupon): $" + String.format("%.2f", weeklyAverage));
+        System.out.println("Monthly Total (after coupon): $" + String.format("%.2f", discountedMonthlyTotal));
+        System.out.println("Weekly Average (after coupon): $" + String.format("%.2f", discountedWeeklyAverage));
+
+        kbd.close();
 
     }
 }
